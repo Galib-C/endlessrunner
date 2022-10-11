@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour
 {
     public GameObject groundChecker;
     public LayerMask whatIsGround;
+    public Animator anim;
 
     public float jumpForce = 100.0f;
 
@@ -33,7 +34,8 @@ public class playerController : MonoBehaviour
         {
             maxSpeed = 5.0f;
         }
-            
+        anim.SetBool("isgrounded", isOnGround);
+        
 
         //Create a 'float' that will be equal to the players horizontal input
         //float movementValueX = Input.GetAxis("Horizontal");
@@ -44,7 +46,7 @@ public class playerController : MonoBehaviour
         playerObject.velocity = new Vector2 (movementValueX * maxSpeed, playerObject.velocity.y);
 
         //check to see if the ground check object is touching the ground
-        isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 1.0f, whatIsGround);
+        isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.1f, whatIsGround);
 
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true)
         {

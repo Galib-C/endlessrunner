@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2810562414180803455}
   - component: {fileID: 7441488657913768652}
   m_Layer: 8
-  m_Name: largePlatform
+  m_Name: MediumPlatform 1
   m_TagString: CleanUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6603833112452023151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6464, y: -2.9727, z: 0}
-  m_LocalScale: {x: 0.7662113, y: 0.20909813, z: 1}
+  m_LocalPosition: {x: -1.8849, y: -2.9727, z: 0}
+  m_LocalScale: {x: 0.48508835, y: 0.20909813, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
