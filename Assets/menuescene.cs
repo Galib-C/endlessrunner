@@ -7,10 +7,24 @@ public class menuescene : MonoBehaviour
 {
     public void LoadGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);
     }
     public void quit()
     {
         Application.Quit();
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void option()
+    { 
+        SceneManager.LoadScene(4);
+    }
+    public void LoadedGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+
 }
